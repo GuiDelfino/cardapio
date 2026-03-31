@@ -11,6 +11,6 @@ FROM eclipse-temurin:21-jdk-jammy
 
 EXPOSE 8080
 
-COPY --from=build /target/menu-digital-0.0.1-SNAPSHOT app.jar
+COPY --from=build /target/menu-digital-0.0.1-SNAPSHOT.jar app.jar
 
 ENTRYPOINT [ "java", "-jar", "app.jar"]
